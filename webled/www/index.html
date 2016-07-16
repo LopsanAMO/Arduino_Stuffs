@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script type="text/javascript" src="zepto.min.js"></script>
+
+<script type="text/javascript">
+function ledon()
+{
+$('#content').load('/arduino/ledon');
+}
+function ledoff()
+{
+$('#content').load('/arduino/ledoff');
+}
+
+</script>
+
+
+
+	</head>
+
+	<body onload="setInterval(refresh, 2000);">
+		<span id="content">0</span>
+      <button onclick="ledon()">LED ON</button> 
+      <button onclick="ledoff()">LED OFF</button>
+	</body>
+</html>
+
